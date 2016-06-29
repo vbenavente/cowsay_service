@@ -7,7 +7,7 @@
 </head>
 <body ng-app="CowsayApp">
   <main ng-controller="CowController as cowctrl">
-    <cow-say text="text" file="{{file}}"></cow-say>
+    <cow-say title="{{cowctrl.title}}"></cow-say>
   </main>
   <script src="bundle.js"></script>
 </body>
