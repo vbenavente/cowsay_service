@@ -1,4 +1,8 @@
 <div>
   <h1>{{text}}</h1>
   <pre>{{cow}}</pre>
+  <form ng-submit="service.makeCow()">
+    <input type="text" ng-model="text" placeholder="cowsays what"/>
+    <button type="submit">Cowsay</button>
+  </form>
 </div>

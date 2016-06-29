@@ -7,7 +7,7 @@ module.exports = function(app) {
     const service = {};
 
     service.makeCow = function(text, file) {
-      file = file || 'cow';
+      file = file || 'beavis.zen';
       text = text || 'moo';
       return cowsay.say({
         text,
