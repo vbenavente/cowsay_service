@@ -5,11 +5,13 @@ module.exports = function(app) {
     return {
       templateUrl:'./templates/cows/cowsay-directive.html',
       scope: {
-        text: '=',
-        file: '@'
+        title: '@'
       },
       controller: function($scope, CowSayService) {
-        $scope.cow = CowSayService.makeCow($scope.text, $scope.file);
+        $scope.makeCow = function(text, file, eyes) {
+          $scope.cow = CowSayService.makeCow(text, file, eyes);
+        };
+        $scope.cow = CowSayService.makeCow();
       }
     };
   });

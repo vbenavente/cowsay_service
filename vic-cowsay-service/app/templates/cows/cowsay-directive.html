@@ -1,4 +1,10 @@
 <div>
-  <h1>{{text}}</h1>
+  <h1>{{title}}</h1>
   <pre>{{cow}}</pre>
+  <form ng-submit="makeCow(text, file, eyes)">
+    <input type="text" ng-model="text" placeholder="cowsays what"/>
+    <input type="text" ng-model="eyes" placeholder="change cow eyes"/>
+    <input type="text" ng-model="file" placeholder="change cow"/>
+    <button type="submit">Cowsay</button>
+  </form>
 </div>
